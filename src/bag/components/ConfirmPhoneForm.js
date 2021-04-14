@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Single from '../../shared/formstuff/Single';
 import svgSprite from '../../images/sprite.svg';
 
 const ConfirmPhoneForm = () => {
+  const [value, setvalue] = useState ('');
+
   return (
     <div className="confirm_form u-center br bg-w">
       <header className=" confirm_form_header bord-b-1 ">

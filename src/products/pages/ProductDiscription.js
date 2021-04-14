@@ -7,10 +7,17 @@ import Footer from '../../shared/uielements/Footer';
 import TopNav from '../../shared/uielements/TopNav';
 
 import {fade} from '../../utils/swiperconfig';
+import {motion} from 'framer-motion';
+import {fadeIn} from '../../utils/animations';
 
 const ProductDiscription = ({}) => {
   return (
-    <Fragment>
+    <motion.div
+      variants={fadeIn}
+      initial="initial"
+      animate="final"
+      exit="initial"
+    >
       <TopNav to="/" text="furniture" />
       <section className="product_des">
         <div className="container">
@@ -62,7 +69,7 @@ const ProductDiscription = ({}) => {
 
       <RelatedProductList />
       <Footer />
-    </Fragment>
+    </motion.div>
   );
 };
 

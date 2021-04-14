@@ -1,12 +1,23 @@
 import React from 'react';
 import svgSprite from '../../images/sprite.svg';
 import {NavLink} from 'react-router-dom';
+import {fadeIn} from '../../utils/animations';
+import {motion} from 'framer-motion';
 
 const Nav = () => {
   return (
-    <nav>
+    <motion.nav
+      variants={fadeIn}
+      initial="initial"
+      animate="final"
+      transition={{
+        duration: 4,
+        when: 'beforeChildren',
+        staggerChildren: 0.4,
+      }}
+    >
       <ul className="nav_list">
-        <li className="nav_list_item">
+        <motion.li variants={fadeIn} className="nav_list_item">
           <NavLink
             activeClassName="active"
             to="/bag"
@@ -18,8 +29,8 @@ const Nav = () => {
             </svg>
             <span class="nav_link_text cap">bag</span>
           </NavLink>
-        </li>
-        <li className="nav_list_item">
+        </motion.li>
+        <motion.li variants={fadeIn} className="nav_list_item">
           <NavLink
             to="/account"
             className="nav_link tablet btn_plain btn_icon flexi weit-1"
@@ -30,9 +41,9 @@ const Nav = () => {
             </svg>
             <span class="nav_link_text cap">Account</span>
           </NavLink>
-        </li>
+        </motion.li>
       </ul>
-    </nav>
+    </motion.nav>
   );
 };
 

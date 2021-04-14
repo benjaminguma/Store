@@ -1,6 +1,9 @@
 import React from 'react';
+import useCtxHook from '../../shared/hooks/UseCtxHook';
 
 const CartTotal = () => {
+  const {cart} = useCtxHook ();
+  const total = cart.reduce ((acc, item) => acc + item.originalPrice, 0);
   return (
     <div className="cart_total">
       <div className="cart_total_box">
@@ -9,7 +12,7 @@ const CartTotal = () => {
             subtotal
           </span>
           <span className="col-g-svg heading_tiny col-bl-2 weit-2 upp">
-            {' '}ugx 118,000
+            {' '}ugx {total}
           </span>
         </div>
         <div className="sp-btw">
@@ -25,7 +28,7 @@ const CartTotal = () => {
             total
           </span>
           <span className="col-g-svg heading_tiny upp weit-3 upp col-bl-1">
-            {' '}ugx 118,000
+            {' '}ugx {total}
           </span>
         </div>
         <div className="sp-btw">
