@@ -1,4 +1,4 @@
-# Ip Address tracker
+# Storefront
 
 a web app that shows the location of an **Ip address** or **domain name** on a map
 
@@ -34,5 +34,4 @@ npm start
 
 
 
-- Frontend mentor - [visit website](https://frontendmentor.io)
 - Benjamin Guma - [visit website](https://benjaminguma.vercel.app)
