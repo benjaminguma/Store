@@ -1,0 +1,28 @@
+.fallback {
+	display: grid;
+	justify-items: center;
+	&_head {
+		margin-bottom: 1rem;
+		& > *:not(:last-child) {
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	&_body {
+	}
+	&_img {
+		display: inline-block;
+		height: 20rem;
+		&.big {
+			transform: scale(1.4);
+			margin-bottom: 4rem;
+		}
+	}
+	&_controls {
+	}
+	&_body {
+		p {
+			font-size: 1.4rem;
+		}
+	}
+}

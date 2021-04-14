@@ -1,0 +1,97 @@
+.product {
+	&,
+	&:link,
+	&:visited {
+		display: grid;
+		grid-template-columns: min-content 1fr;
+		column-gap: 3rem;
+		padding: 1.5rem;
+		align-items: start;
+		margin-bottom: 1rem;
+		cursor: pointer;
+	}
+	&:hover {
+		background-color: $col-white-1;
+	}
+	&_list {
+		margin-top: 2.5rem;
+	}
+
+	figure {
+		overflow: hidden;
+		align-self: stretch;
+		width: 10rem;
+		height: 13rem;
+	}
+	&_image {
+		display: inline-block;
+		height: 100%;
+		object-fit: cover;
+	}
+	&_details {
+		display: grid;
+		row-gap: 1rem;
+		align-self: center;
+		padding-top: 2rem;
+
+		p {
+			display: grid;
+			row-gap: 0.7rem;
+		}
+	}
+
+	&_control {
+		display: grid;
+		justify-content: end;
+
+		button {
+			padding: 0.5rem 1rem;
+		}
+	}
+
+	&_des {
+		&_images {
+			grid-area: images;
+			display: grid;
+			grid-template-columns: 1fr;
+			position: relative;
+		}
+		&_image {
+			display: block;
+			width: 100%;
+			height: auto;
+			margin: auto;
+		}
+		&_pack {
+			grid-area: details;
+			display: grid;
+
+			row-gap: 2rem;
+		}
+		&_details {
+			width: 85%;
+		}
+		&_price {
+			display: grid;
+			grid-template-columns: repeat(2, max-content);
+			align-items: start;
+			column-gap: 2.5rem;
+
+			&_box {
+				display: grid;
+				row-gap: 0.5rem;
+			}
+			.badge_red {
+				font-size: 1.3rem;
+				padding: 0.3rem 0.7rem;
+			}
+		}
+		&_controls {
+			justify-content: start;
+
+			.btn_large {
+				padding: 0.9rem 6rem;
+			}
+		}
+	}
+}

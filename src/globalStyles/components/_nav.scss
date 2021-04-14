@@ -1,0 +1,21 @@
+.nav {
+	&_list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 2rem;
+	}
+
+	&_link {
+		justify-content: center;
+		font-size: 1.5rem;
+		&:link,
+		&:visited {
+			padding: 0.8rem 1rem;
+		}
+		svg {
+			width: 2rem;
+			height: 2rem;
+			fill: currentColor;
+		}
+	}
+}

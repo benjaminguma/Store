@@ -1,0 +1,39 @@
+.order_section {
+	padding-top: 4rem;
+	padding-bottom: 16rem;
+	.order_table {
+		max-width: 62%;
+		margin: auto;
+		display: grid;
+		column-gap: 3rem;
+	}
+}
+
+.orders_and_addresses {
+	.container {
+		min-height: 60vh;
+		display: grid;
+		grid-template-columns: 1.3fr 4fr;
+
+		& > * {
+			padding: 2rem 0 2rem 2rem;
+
+			&:nth-child(2) {
+				border-left: 1px solid $col-bord-1;
+				padding-right: 2.5rem;
+				padding-left: 4rem;
+			}
+		}
+		.address_list {
+			grid-template-columns: repeat(auto-fit, minmax(20rem, 23rem));
+		}
+	}
+}
+
+.customer_order {
+	&_list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 3rem;
+	}
+}

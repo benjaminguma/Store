@@ -1,0 +1,773 @@
+{"categories": [
+    {
+      "categoryName": "Beauty & Health",
+      "categoryImage": "https://soko.fra1.digitaloceanspaces.com/TestImg/f622a6ec-2710-48d4-b71b-0ee809fa238d.jpg",
+      "categoryId": 389,
+      "productDetails": [
+        {
+          "productName": "Aloe lipstick & balm",
+          "productDetails": "Natural Moisture Lip stick magic color change makeup custom lipstick lip balm",
+          "categoryName": "Beauty & Health",
+          "isListed": null,
+          "categoryId": 389,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 20000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/f622a6ec-2710-48d4-b71b-0ee809fa238d.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/8dd7c5b2-fc59-4c1b-b901-bfcb9c0db3c4.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/6f95375d-5133-4155-ab9a-ec14242c2d98.jpg"
+          ],
+          "maxQuantity": 5,
+          "originalPrice": 20000,
+          "productId": 281,
+          "size": []
+        },
+        {
+          "productName": "Fruit sea salt scrub",
+          "productDetails": "Fruit Sea Salt Scrub Gentle Exfoliation Whitening Moisturizing Deep Clean Skin Natural Herbal Scrub15.87oz",
+          "categoryName": "Beauty & Health",
+          "isListed": null,
+          "categoryId": 389,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 30000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/fca016b4-e42e-4080-bc28-3eb977152777.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/a8ca4d37-0a89-420b-8c45-488d4a96f6fb.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/048ffe01-aaef-404b-bbd1-748ea529aea0.jpg"
+          ],
+          "maxQuantity": 5,
+          "originalPrice": 30000,
+          "productId": 280,
+          "size": []
+        },
+        {
+          "productName": "brightening scrub",
+          "productDetails": "Exfoliator Gel A gentle, non-irritating scrub that deeply cleans facial pores",
+          "categoryName": "Beauty & Health",
+          "isListed": null,
+          "categoryId": 389,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 30000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/76338984-1e1f-4e83-9801-060ff8db2990.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/61df71eb-a22e-42fd-b46f-0bbb87ab765c.jpg"
+          ],
+          "maxQuantity": 2,
+          "originalPrice": 30000,
+          "productId": 279,
+          "size": []
+        }
+      ]
+    },
+    {
+      "categoryName": "Women\"s Shoes",
+      "categoryImage": "https://soko.fra1.digitaloceanspaces.com/TestImg/ee5c71cc-8738-46ee-b519-d7b2091df557.jpg",
+      "categoryId": 387,
+      "productDetails": [
+        {
+          "productName": "open toe stilleto",
+          "productDetails": "Luxury designer noble pointed toe open toe stiletto party wedding women\"s stiletto heels",
+          "categoryName": "Women\"s Shoes",
+          "isListed": null,
+          "categoryId": 387,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 50000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/ee5c71cc-8738-46ee-b519-d7b2091df557.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/3e56ba9b-875c-497c-b35f-b4c637bdcefb.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/495b6f7d-ac76-4086-9b60-066eace104c7.jpg"
+          ],
+          "maxQuantity": 5,
+          "originalPrice": 50000,
+          "productId": 278,
+          "size": []
+        },
+        {
+          "productName": "candy colour sandals",
+          "productDetails": "candy colour sandals ",
+          "categoryName": "Women\"s Shoes",
+          "isListed": null,
+          "categoryId": 387,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 17,
+          "discountedPrice": 29000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/335959de-17ab-4749-b7a5-2c90da3002f1.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/eb7f7ff7-2693-4dc7-8aad-a4d70927bcfb.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/c2796723-3f43-4c9b-b896-e3abd64d8788.jpg"
+          ],
+          "maxQuantity": 20,
+          "originalPrice": 35000,
+          "productId": 277,
+          "size": []
+        },
+        {
+          "productName": "big butterfly stilet",
+          "productDetails": "big butterfly stiletto high heels",
+          "categoryName": "Women\"s Shoes",
+          "isListed": null,
+          "categoryId": 387,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 20,
+          "discountedPrice": 40000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/b01fc8e2-c76d-47a1-9efb-44aeeaf9754b.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/22be4f47-d70d-453b-a23c-dd0bd644b6af.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/68f66634-e5f4-47de-a4ad-a968cd2f98d7.jpg"
+          ],
+          "maxQuantity": 6,
+          "originalPrice": 50000,
+          "productId": 276,
+          "size": [
+            "31-38"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Men\"s Shoes",
+      "categoryImage": "https://soko.fra1.digitaloceanspaces.com/TestImg/5db7c954-da22-4273-b5c1-31d752e8e5e8.jpg",
+      "categoryId": 385,
+      "productDetails": [
+        {
+          "productName": "steppers ",
+          "productDetails": "",
+          "categoryName": "Men\"s Shoes",
+          "isListed": null,
+          "categoryId": 385,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 140000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/5db7c954-da22-4273-b5c1-31d752e8e5e8.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/93412216-d0d1-4d4f-b626-7227efb3e3db.jpg"
+          ],
+          "maxQuantity": 5,
+          "originalPrice": 140000,
+          "productId": 175,
+          "size": []
+        },
+        {
+          "productName": "sneaker shoes",
+          "productDetails": "",
+          "categoryName": "Men\"s Shoes",
+          "isListed": null,
+          "categoryId": 385,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 150000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/897cafda-40fe-48cb-8bad-68004ed1a1f8.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/1e805f21-a083-4bad-b0db-9f0b00b44b07.jpg"
+          ],
+          "maxQuantity": 5,
+          "originalPrice": 150000,
+          "productId": 176,
+          "size": [
+            "32",
+            "34",
+            "40"
+          ]
+        },
+        {
+          "productName": "Men\"s leather shoes",
+          "productDetails": "custom brand breathable outdoor office genuine leather high top men\"s shoes soft soled shoes",
+          "categoryName": "Men\"s Shoes",
+          "isListed": null,
+          "categoryId": 385,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 5,
+          "discountedPrice": 75000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/fab50b0f-ceaf-41d1-a0de-0f1b36519209.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/d0565c3b-7cc9-457b-809c-0cf1d806a5c5.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/e99d95e1-2327-4eaf-9fc1-4e314b781169.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/099f49ab-d681-4b54-9cc5-70d8b37a3f29.jpg"
+          ],
+          "maxQuantity": 6,
+          "originalPrice": 79000,
+          "productId": 275,
+          "size": [
+            "38-48"
+          ]
+        },
+        {
+          "productName": "labelmans sneakers",
+          "productDetails": "men shoes private labelmen\"s dress shoes leadarmen shoes sneakers",
+          "categoryName": "Men\"s Shoes",
+          "isListed": null,
+          "categoryId": 385,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 150000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/d50f8e75-8d51-45ed-8069-af4cd99df0ab.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/21f29545-34e1-4de2-a8a1-39e2b486ab4c.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/dcdd6b4d-01b3-4ef0-a97e-ede77c56db0d.jpg"
+          ],
+          "maxQuantity": 8,
+          "originalPrice": 150000,
+          "productId": 274,
+          "size": [
+            "41",
+            " 42",
+            " 45"
+          ]
+        }
+      ]
+    },
+    {
+      "categoryName": "Women\"s Accessories",
+      "categoryImage": "https://soko.fra1.digitaloceanspaces.com/TestImg/1371a28c-02a4-4daf-a318-9379c8e0435e.jpg",
+      "categoryId": 383,
+      "productDetails": [
+        {
+          "productName": "bangle",
+          "productDetails": "",
+          "categoryName": "Women\"s Accessories",
+          "isListed": null,
+          "categoryId": 383,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 7500,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/1371a28c-02a4-4daf-a318-9379c8e0435e.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/80f0730a-7713-48a2-8998-d90d5e2fa897.jpg"
+          ],
+          "maxQuantity": 6,
+          "originalPrice": 7500,
+          "productId": 173,
+          "size": []
+        },
+        {
+          "productName": "arabic bangle",
+          "productDetails": "",
+          "categoryName": "Women\"s Accessories",
+          "isListed": null,
+          "categoryId": 383,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 4000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/0d846aa0-cf0a-417f-91ef-f8d195dab1fd.jpg"
+          ],
+          "maxQuantity": 5,
+          "originalPrice": 4000,
+          "productId": 174,
+          "size": []
+        },
+        {
+          "productName": "Pearl Headband",
+          "productDetails": "Pearl Headband Hair Accessories Braided Hairband For Girls Crystal Rhinestone Headbands",
+          "categoryName": "Women\"s Accessories",
+          "isListed": null,
+          "categoryId": 383,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 15000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/4149c4e6-93cf-469e-b76e-655dfcc65264.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/78e41802-3a1a-49c2-bd1e-b22e749fab0a.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/3a36c1cc-02b1-4b7c-b3fc-b30865dedd83.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/28b1138a-2f7a-4e2a-b194-f8534fc80f6a.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/23a988f8-f142-4d33-af80-8ac53cf3c71e.jpg"
+          ],
+          "maxQuantity": 25,
+          "originalPrice": 15000,
+          "productId": 270,
+          "size": []
+        },
+        {
+          "productName": "Necklace & ear rings",
+          "productDetails": "women\"s multi-layered long chain turquoise beads choker necklace earring sets",
+          "categoryName": "Women\"s Accessories",
+          "isListed": null,
+          "categoryId": 383,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 30000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/fa77335e-cb02-42a0-8d11-2ce849720f6f.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/7eb3a77d-ca10-4060-939e-79edfbbea383.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/ffa4522a-daaf-49ba-8867-6feb7c0f8d9a.jpg"
+          ],
+          "maxQuantity": 5,
+          "originalPrice": 30000,
+          "productId": 271,
+          "size": []
+        }
+      ]
+    },
+    {
+      "categoryName": "Men Accessories",
+      "categoryImage": "https://soko.fra1.digitaloceanspaces.com/TestImg/30bfeedd-56bb-4af0-95d4-295a9404cb23.jpg",
+      "categoryId": 382,
+      "productDetails": [
+        {
+          "productName": "Quartz wrist watch",
+          "productDetails": "High Quality Stainless Steel Swiss Quartz Movement Mens Wrist Watch",
+          "categoryName": "Men Accessories",
+          "isListed": null,
+          "categoryId": 382,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 60000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/30bfeedd-56bb-4af0-95d4-295a9404cb23.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/305bafa1-ce7a-4058-bbfe-15b629bcae68.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/063edf63-035a-45b7-989a-b5d076e38d94.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/ecd670b0-dc3e-4fc2-83d3-dac608a3870e.jpg"
+          ],
+          "maxQuantity": 5,
+          "originalPrice": 60000,
+          "productId": 269,
+          "size": []
+        },
+        {
+          "productName": "Leather wallet",
+          "productDetails": "2021 Genuine Leather Wallet Rfid Wallet Leather Men Wallets Leather Men",
+          "categoryName": "Men Accessories",
+          "isListed": null,
+          "categoryId": 382,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 30000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/12d0f08c-ba0c-47d7-9eff-5518bab8c1a8.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/727cf8fd-172d-4027-84a9-a5219ee76def.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/2f4b8768-f848-4987-96ca-f3d22c7b9e16.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/e48a8803-1ebf-46c9-8549-e0d704afc041.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/e4a0d4f9-9cf6-4183-b87a-904b32b46d6b.jpg"
+          ],
+          "maxQuantity": 5,
+          "originalPrice": 30000,
+          "productId": 272,
+          "size": []
+        },
+        {
+          "productName": "CURREN 8329 watches ",
+          "productDetails": "CURREN 8329 Top Brand Watches Male Clock Sport Military Leather Strap Chronograph Watches",
+          "categoryName": "Men Accessories",
+          "isListed": null,
+          "categoryId": 382,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 70000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/312f15d0-c789-441f-a2aa-2acab19dc3e8.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/34eda144-8b98-4de6-89c5-571fa9ed89e7.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/2f1884ca-9963-4ac6-875b-77ca798a388c.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/b9a61722-9929-4f7d-8b22-06c6665dbe35.jpg"
+          ],
+          "maxQuantity": 5,
+          "originalPrice": 70000,
+          "productId": 268,
+          "size": []
+        },
+        {
+          "productName": "Luminous bracelets ",
+          "productDetails": "2020 Luminous Yoga Lotus OM Natural Volcanic Stone Bracelets Men Women Glowing In The Dark Jewelry Classic Bracelets Accesory\n\n",
+          "categoryName": "Men Accessories",
+          "isListed": null,
+          "categoryId": 382,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 30000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/dee2a193-e028-4e2e-9fa8-697a3a8fbc53.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/bfad5c87-af02-49ec-9ef4-c1fb2b050860.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/578371c6-ca3d-4d5c-9f03-00e046f558ea.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/2f81a075-97fd-482c-937b-b4921e9d9951.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/90c7d4c0-ebad-425a-b33a-47f9801a3a49.jpg"
+          ],
+          "maxQuantity": 20,
+          "originalPrice": 30000,
+          "productId": 267,
+          "size": []
+        },
+        {
+          "productName": "Pendants",
+          "productDetails": "Gold Plated Army Pendant Man Necklace Dog Tag",
+          "categoryName": "Men Accessories",
+          "isListed": null,
+          "categoryId": 382,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 10000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/d4f3afb9-87f5-4f62-9b97-0ff11bd3aba5.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/079f0b95-a51f-4ac5-bcf9-5b3ab50316eb.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/25fafafb-e28f-46f1-a2e2-9c8d58bede48.jpg"
+          ],
+          "maxQuantity": 3,
+          "originalPrice": 10000,
+          "productId": 266,
+          "size": []
+        }
+      ]
+    },
+    {
+      "categoryName": "Bags",
+      "categoryImage": "https://soko.fra1.digitaloceanspaces.com/TestImg/085451fc-f925-432c-885a-67a772be67b5.jpg",
+      "categoryId": 216,
+      "productDetails": [
+        {
+          "productName": "graffiti pearl bag ",
+          "productDetails": "graffiti pearl designer acrylic handbags purses and ladies clutch purse evening bag",
+          "categoryName": "Bags",
+          "isListed": null,
+          "categoryId": 216,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 80000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/085451fc-f925-432c-885a-67a772be67b5.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/31494136-142e-4cf9-b72d-f0cf146c1bcf.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/0d0bfdaf-f97a-48c1-b3eb-1a59ae7a1f4d.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/700e60af-c745-4027-ab63-767e5278ac26.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/381e7d73-1955-49a2-b1ab-1deef69d67bd.jpg"
+          ],
+          "maxQuantity": 7,
+          "originalPrice": 80000,
+          "productId": 273,
+          "size": []
+        },
+        {
+          "productName": "pink bag",
+          "productDetails": "",
+          "categoryName": "Bags",
+          "isListed": null,
+          "categoryId": 216,
+          "color": [
+            "#42D321"
+          ],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 80000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/d7f85a1b-46e5-4d7f-8dd8-8f0522213178.jpg"
+          ],
+          "maxQuantity": 2,
+          "originalPrice": 80000,
+          "productId": 166,
+          "size": [
+            "S",
+            " L"
+          ]
+        },
+        {
+          "productName": "Women Handbag",
+          "productDetails": "4pcs Fashionable Lady Large Capacity Tote Bag Tassel Leather Shoulder Bags Satchel Women Purses and Handbags Set for Gift",
+          "categoryName": "Bags",
+          "isListed": null,
+          "categoryId": 216,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 100000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/5e4c0f63-74b3-4a4d-b3f2-d8420dde6c25.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/82c9c814-16c2-4101-9be6-c250fa6cc821.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/829148e3-ad6f-4021-8c77-0d14f6cdf157.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/a0c3f6a9-ea31-4214-8c65-024b22cd4805.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/c33a46e1-ff57-418a-b206-c7d92c16efb3.jpg"
+          ],
+          "maxQuantity": 4,
+          "originalPrice": 100000,
+          "productId": 265,
+          "size": [
+            "\n35*24*20CM"
+          ]
+        },
+        {
+          "productName": "Purse bags",
+          "productDetails": "Fashion purse bags colorful custom logo purses and handbags women Pu leather long wallet for ladies",
+          "categoryName": "Bags",
+          "isListed": null,
+          "categoryId": 216,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 0,
+          "discountedPrice": 10000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/6caccfa9-b489-46cd-9939-b91e09c24a05.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/a50d1e53-a44c-481b-9df3-f50115924ec4.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/7d828862-c8a3-4640-af37-917ce9588a0c.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/a2bc2970-409b-4f1e-8f62-bfcd79bafb8c.jpg",
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/e4642b90-c49c-4254-a578-95034628e6cb.jpg"
+          ],
+          "maxQuantity": 100,
+          "originalPrice": 10000,
+          "productId": 264,
+          "size": []
+        },
+        {
+          "productName": "classic milk",
+          "productDetails": "",
+          "categoryName": "Bags",
+          "isListed": null,
+          "categoryId": 216,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 22,
+          "discountedPrice": 70000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/8bd67a58-6137-4743-a07a-08a030bc3cfc.jpg"
+          ],
+          "maxQuantity": 25,
+          "originalPrice": 90000,
+          "productId": 169,
+          "size": []
+        },
+        {
+          "productName": "leathery bag",
+          "productDetails": "",
+          "categoryName": "Bags",
+          "isListed": null,
+          "categoryId": 216,
+          "color": [],
+          "currency": "UGX",
+          "discountPercent": 6,
+          "discountedPrice": 70000,
+          "imageUrls": [
+            "https://soko.fra1.digitaloceanspaces.com/TestImg/92b522c7-4633-4de1-83c4-42fb4505e2a5.jpg"
+          ],
+          "maxQuantity": 2,
+          "originalPrice": 75000,
+          "productId": 167,
+          "size": []
+        }
+      ]
+    }
+  ],
+  "topSellerProducts": [
+    {
+      "productName": "bangle",
+      "productDetails": "",
+      "categoryName": "Women\"s Accessories",
+      "isListed": null,
+      "categoryId": 383,
+      "color": [],
+      "currency": "UGX",
+      "discountPercent": 0,
+      "discountedPrice": 7500,
+      "imageUrls": [
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/1371a28c-02a4-4daf-a318-9379c8e0435e.jpg",
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/80f0730a-7713-48a2-8998-d90d5e2fa897.jpg"
+      ],
+      "maxQuantity": 6,
+      "originalPrice": 7500,
+      "productId": 173,
+      "size": []
+    },
+    {
+      "productName": "arabic bangle",
+      "productDetails": "",
+      "categoryName": "Women\"s Accessories",
+      "isListed": null,
+      "categoryId": 383,
+      "color": [],
+      "currency": "UGX",
+      "discountPercent": 0,
+      "discountedPrice": 4000,
+      "imageUrls": [
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/0d846aa0-cf0a-417f-91ef-f8d195dab1fd.jpg"
+      ],
+      "maxQuantity": 5,
+      "originalPrice": 4000,
+      "productId": 174,
+      "size": []
+    },
+    {
+      "productName": "steppers ",
+      "productDetails": "",
+      "categoryName": "Men\"s Shoes",
+      "isListed": null,
+      "categoryId": 385,
+      "color": [],
+      "currency": "UGX",
+      "discountPercent": 0,
+      "discountedPrice": 140000,
+      "imageUrls": [
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/5db7c954-da22-4273-b5c1-31d752e8e5e8.jpg",
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/93412216-d0d1-4d4f-b626-7227efb3e3db.jpg"
+      ],
+      "maxQuantity": 5,
+      "originalPrice": 140000,
+      "productId": 175,
+      "size": []
+    },
+    {
+      "productName": "Purse bags",
+      "productDetails": "Fashion purse bags colorful custom logo purses and handbags women Pu leather long wallet for ladies",
+      "categoryName": "Bags",
+      "isListed": null,
+      "categoryId": 216,
+      "color": [],
+      "currency": "UGX",
+      "discountPercent": 0,
+      "discountedPrice": 10000,
+      "imageUrls": [
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/6caccfa9-b489-46cd-9939-b91e09c24a05.jpg",
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/a50d1e53-a44c-481b-9df3-f50115924ec4.jpg",
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/7d828862-c8a3-4640-af37-917ce9588a0c.jpg",
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/a2bc2970-409b-4f1e-8f62-bfcd79bafb8c.jpg",
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/e4642b90-c49c-4254-a578-95034628e6cb.jpg"
+      ],
+      "maxQuantity": 100,
+      "originalPrice": 10000,
+      "productId": 264,
+      "size": []
+    },
+    {
+      "productName": "Pendants",
+      "productDetails": "Gold Plated Army Pendant Man Necklace Dog Tag",
+      "categoryName": "Men Accessories",
+      "isListed": null,
+      "categoryId": 382,
+      "color": [],
+      "currency": "UGX",
+      "discountPercent": 0,
+      "discountedPrice": 10000,
+      "imageUrls": [
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/d4f3afb9-87f5-4f62-9b97-0ff11bd3aba5.jpg",
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/079f0b95-a51f-4ac5-bcf9-5b3ab50316eb.jpg",
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/25fafafb-e28f-46f1-a2e2-9c8d58bede48.jpg"
+      ],
+      "maxQuantity": 3,
+      "originalPrice": 10000,
+      "productId": 266,
+      "size": []
+    },
+    {
+      "productName": "pink bag",
+      "productDetails": "",
+      "categoryName": "Bags",
+      "isListed": null,
+      "categoryId": 216,
+      "color": [
+        "#42D321"
+      ],
+      "currency": "UGX",
+      "discountPercent": 0,
+      "discountedPrice": 80000,
+      "imageUrls": [
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/d7f85a1b-46e5-4d7f-8dd8-8f0522213178.jpg"
+      ],
+      "maxQuantity": 2,
+      "originalPrice": 80000,
+      "productId": 166,
+      "size": [
+        "S",
+        " L"
+      ]
+    },
+    {
+      "productName": "leathery bag",
+      "productDetails": "",
+      "categoryName": "Bags",
+      "isListed": null,
+      "categoryId": 216,
+      "color": [],
+      "currency": "UGX",
+      "discountPercent": 6,
+      "discountedPrice": 70000,
+      "imageUrls": [
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/92b522c7-4633-4de1-83c4-42fb4505e2a5.jpg"
+      ],
+      "maxQuantity": 2,
+      "originalPrice": 75000,
+      "productId": 167,
+      "size": []
+    },
+    {
+      "productName": "classic milk",
+      "productDetails": "",
+      "categoryName": "Bags",
+      "isListed": null,
+      "categoryId": 216,
+      "color": [],
+      "currency": "UGX",
+      "discountPercent": 22,
+      "discountedPrice": 70000,
+      "imageUrls": [
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/8bd67a58-6137-4743-a07a-08a030bc3cfc.jpg"
+      ],
+      "maxQuantity": 25,
+      "originalPrice": 90000,
+      "productId": 169,
+      "size": []
+    },
+    {
+      "productName": "sneaker shoes",
+      "productDetails": "",
+      "categoryName": "Men\"s Shoes",
+      "isListed": null,
+      "categoryId": 385,
+      "color": [],
+      "currency": "UGX",
+      "discountPercent": 0,
+      "discountedPrice": 150000,
+      "imageUrls": [
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/897cafda-40fe-48cb-8bad-68004ed1a1f8.jpg",
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/1e805f21-a083-4bad-b0db-9f0b00b44b07.jpg"
+      ],
+      "maxQuantity": 5,
+      "originalPrice": 150000,
+      "productId": 176,
+      "size": [
+        "32",
+        "34",
+        "40"
+      ]
+    },
+    {
+      "productName": "Women Handbag",
+      "productDetails": "4pcs Fashionable Lady Large Capacity Tote Bag Tassel Leather Shoulder Bags Satchel Women Purses and Handbags Set for Gift",
+      "categoryName": "Bags",
+      "isListed": null,
+      "categoryId": 216,
+      "color": [],
+      "currency": "UGX",
+      "discountPercent": 0,
+      "discountedPrice": 100000,
+      "imageUrls": [
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/5e4c0f63-74b3-4a4d-b3f2-d8420dde6c25.jpg",
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/82c9c814-16c2-4101-9be6-c250fa6cc821.jpg",
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/829148e3-ad6f-4021-8c77-0d14f6cdf157.jpg",
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/a0c3f6a9-ea31-4214-8c65-024b22cd4805.jpg",
+        "https://soko.fra1.digitaloceanspaces.com/TestImg/c33a46e1-ff57-418a-b206-c7d92c16efb3.jpg"
+      ],
+      "maxQuantity": 4,
+      "originalPrice": 100000,
+      "productId": 265,
+      "size": [
+        "\n35*24*20CM"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+.related_product {
+	display: grid;
+	row-gap: 1.5rem;
+	justify-content: start;
+	justify-items: start;
+
+	&_details {
+		max-width: 90%;
+	}
+
+	&_img {
+		height: 19rem;
+	}
+}

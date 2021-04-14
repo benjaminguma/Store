@@ -1,0 +1,37 @@
+.confirmation {
+	padding-top: 3rem;
+	padding-bottom: 24rem;
+	.container {
+		display: grid;
+		grid-template-columns: 3.2fr 1.4fr;
+		column-gap: 10rem;
+	}
+
+	.cart {
+		padding-left: 2rem;
+		border-left: 1px solid $col-bord-2;
+	}
+}
+.head_text_1 {
+	display: grid;
+	row-gap: 1rem;
+}
+
+.cart {
+	&_list {
+		display: grid;
+		row-gap: 2.5rem;
+	}
+
+	&_total {
+		&_box {
+			padding: 2rem 0;
+			border-bottom: 1px dashed $col-bord-1;
+			display: grid;
+			row-gap: 7px;
+		}
+		&_footer {
+			padding: 1rem 0;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+main.main {
+}
+
+.products_cart {
+	border-top: 1px solid $col-bord-1;
+	.container {
+		display: grid;
+		grid-template-columns: 2.2fr 5fr 2.5fr;
+		& > * {
+			padding-top: 3.5rem;
+		}
+		// this is for productlist and cart sections
+		& > *:not(:first-child) {
+			padding: 2.5rem;
+			padding-top: 3.5rem;
+		}
+		// this is for sidebar and productlist sections
+		& > *:not(:last-child) {
+			border-right: 1px solid $col-bord-2;
+		}
+	}
+
+	.badge {
+		padding: 0.3rem 1rem;
+		font-size: 1.5rem;
+	}
+	button {
+		font-family: inherit;
+	}
+}
+
+.product_category {
+	position: relative;
+
+
+	.sidebar{
+		
+		&_link{
+			display: block;
+		}
+	}
+
+	& > .searchbox {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 88%;
+		transform: translate(-50%, -50%);
+	}
+}

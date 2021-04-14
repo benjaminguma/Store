@@ -1,0 +1,18 @@
+.footer {
+	&_main {
+		padding: 4rem 0;
+		& > .container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(20rem, max-content));
+			justify-content: center;
+			column-gap: 3rem;
+		}
+	}
+	&_box {
+		color: $col-white-1;
+
+		&_img {
+			height: 5rem;
+		}
+	}
+}

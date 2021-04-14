@@ -1,0 +1,25 @@
+.address_list {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(2, 25rem);
+	gap: 3rem;
+}
+.address {
+	&_tablet {
+		cursor: pointer;
+		&.grid {
+			display: grid;
+			row-gap: 0.7rem;
+			padding: 2rem 1rem;
+		}
+
+		&_link {
+			svg {
+				fill: $col-blue;
+			}
+			&:hover {
+				background-color: transparent;
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.order_table {
+	padding: 3rem;
+	&_head {
+	}
+	&_list {
+		& > * {
+			padding: 2rem 0;
+			border-bottom: 1px solid $col-bord-2;
+		}
+	}
+
+	&_products {
+		display: grid;
+		row-gap: 2.5rem;
+	}
+}

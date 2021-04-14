@@ -1,0 +1,18 @@
+.confirm_box {
+	@extend .address;
+
+	&_img {
+		position: relative;
+		grid-area: image;
+		width: 4rem;
+		height: 4rem;
+		svg {
+			fill: $col-white-1;
+		}
+	}
+	&_details {
+		grid-area: txt;
+		display: grid;
+		row-gap: 5px;
+	}
+}

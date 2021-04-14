@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Baloo+2);
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
+	min-height: 100vh;
+	font-size: 1.4rem;
+	color: $col-gray-2;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
+}
+
+a:link,
+a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
+}
+.back_nav {
+	border-bottom: 2px solid $col-bord-1;
+}
+button:disabled,
+.disabled {
+	background-color: $col-gray-dis;
+	color: $col-white;
+}

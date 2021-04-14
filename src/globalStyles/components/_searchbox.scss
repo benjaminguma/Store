@@ -1,0 +1,26 @@
+.searchbox {
+	display: grid;
+	grid-template-columns: 1fr min-content;
+	background-color: lighten($col-gray-bg, 1%);
+	overflow: hidden;
+	& > * {
+		padding: 1rem;
+	}
+
+	&_input {
+		border: none;
+		background-color: transparent;
+		font-size: 1.8rem;
+		font-family: inherit;
+		color: $col-gray-dark;
+		&::placeholder {
+			color: $col-gray-svg;
+			font-weight: $weight-1;
+			font-family: inherit;
+		}
+	}
+	&_button {
+		padding-left: 1.4rem;
+		padding-right: 1.4rem;
+	}
+}

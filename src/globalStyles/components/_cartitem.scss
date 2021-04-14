@@ -1,0 +1,14 @@
+.cart_item {
+	display: grid;
+	row-gap: 1rem;
+	&_title {
+		display: grid;
+		row-gap: 5px;
+	}
+	&_price {
+		display: grid;
+		p {
+			margin-bottom: 5px;
+		}
+	}
+}

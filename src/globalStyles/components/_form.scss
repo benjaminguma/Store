@@ -1,0 +1,101 @@
+.form {
+	&_group {
+		display: grid;
+		column-gap: 0.7rem;
+	}
+	&_label {
+		margin-bottom: 0.7rem;
+	}
+	&_input_single {
+		padding: 0.8rem 1rem;
+		background-color: $col-gray-1;
+
+		&::placeholder {
+			color: $col-bord-1;
+		}
+	}
+	&_input,
+	&_input_single {
+		font-family: inherit;
+		border: 1px solid darken($col-bord-2, 3%);
+
+		&:focus {
+			border-color: $col-gray-svg;
+		}
+	}
+	&_input {
+		padding: 1rem 1.4rem;
+		resize: none;
+		font-size: 1.4rem;
+
+		&::placeholder {
+			color: $col-gray-svg;
+		}
+	}
+}
+.checkbox {
+	input[type='checkbox']:checked {
+		& ~ .checkbox_display {
+			border: 2px solid $col-blue;
+
+			&::before {
+				background-color: $col-blue;
+			}
+		}
+	}
+	&_display {
+		&::before {
+			content: '';
+			width: 1.5rem;
+			height: 1.5rem;
+			border-radius: 50%;
+		}
+	}
+
+	&_text {
+	}
+}
+
+.address_form {
+	width: 45rem;
+	max-width: 100vw;
+	padding: 3rem 2rem;
+	padding-top: 0;
+
+	&_header {
+		padding: 1.5rem 0;
+
+		border-bottom: 1px solid $col-bord-2;
+	}
+	form {
+		display: grid;
+		row-gap: 2rem;
+	}
+
+	.form_submit {
+		justify-self: center;
+	}
+}
+.confirm_form {
+	&_header {
+		position: relative;
+		padding: 1.5rem 0;
+	}
+	&_pack {
+		display: grid;
+		grid-template-columns: repeat(4, 5rem);
+		column-gap: 1.5rem;
+	}
+
+	form {
+		padding: 3rem 2rem;
+		display: grid;
+		justify-items: center;
+		row-gap: 2rem;
+
+		p {
+			width: 80%;
+			max-width: 90%;
+		}
+	}
+}
