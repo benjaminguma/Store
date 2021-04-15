@@ -6,7 +6,7 @@ a e-commerce app that shows the location of an **Ip address** or **domain name**
 
 ![application preview](./desktop-design.png)
 
-### visit [the application here](https://store-delta-two.vercel.app/)
+### visit [the application here](https://store-80n42fr87-benjaminguma.vercel.app/)
 
 ## installing and running the app
 
