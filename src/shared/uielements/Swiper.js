@@ -16,7 +16,7 @@ class Swipers extends Component {
     }
   }
   render () {
-    const {children, big, navigation} = this.props;
+    const {children, big, navigation, images} = this.props;
     return (
       <Fragment>
         <div
@@ -31,21 +31,16 @@ class Swipers extends Component {
                 ))
               : <Fragment>
 
-                  <div key={3} className="swiper-slide">
-                    <img className="product_des_image br" src={test} alt="" />
-                  </div>
+                  {images.map ((soc, index) => (
+                    <div key={index} className="swiper-slide">
+                      <img
+                        className="product_des_image br"
+                        src={soc}
+                        alt="product_img"
+                      />
+                    </div>
+                  ))}
 
-                  <div key={3} className="swiper-slide">
-                    <img className="product_des_image br" src={test} alt="" />
-                  </div>
-
-                  <div key={3} className="swiper-slide">
-                    <img className="product_des_image br" src={test} alt="" />
-                  </div>
-
-                  <div key={3} className="swiper-slide">
-                    <img className="product_des_image br" src={test} alt="" />
-                  </div>
                 </Fragment>}
 
           </div>

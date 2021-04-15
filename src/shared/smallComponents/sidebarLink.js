@@ -1,21 +1,28 @@
 import React from 'react';
 import SvgSprite from '../../images/sprite.svg';
 
-const SidebarLink = ({index, count, title, handleClick, ...restProps}) => {
-  let showIcon = true;
-  if (restProps.icon) showIcon = false;
+const SidebarLink = ({
+  index,
+  count,
+  title,
+  handleClick,
+  active,
+  ...restProps
+}) => {
+  let showIcon = false;
+  if (restProps.icon) showIcon = true;
   return (
     <li className="sidebar_list_item" key={index}>
-      {showIcon
+      {!showIcon
         ? <button
-            className="sidebar_link btn_plain cap u-left"
+            className={`sidebar_link btn_plain cap u-left ${active ? ' active' : ''}`}
             onClick={handleClick}
           >
 
             {title} {`(${count})`}
           </button>
         : <button
-            className="sidebar_link btn_plain cap flexi"
+            className={`sidebar_link btn_plain cap flexi ${active ? ' active' : ''}`}
             onClick={handleClick}
           >
             <svg className="small_svg mr-1">

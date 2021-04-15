@@ -3,8 +3,7 @@ import {Link} from 'react-router-dom';
 import FallBackScreen from '../components/FallBackScreen';
 
 import Confirmation from '../components/Confirmation';
-import Modal from '../../shared/uielements/Modal';
-import ConfirmPhoneForm from '../components/ConfirmPhoneForm';
+
 // <OrderConfirmation />;
 const CartPage = () => {
   return (
@@ -22,9 +21,7 @@ const CartPage = () => {
     >
 
       <Confirmation />
-      <Modal>
-        <ConfirmPhoneForm />
-      </Modal>
+
     </FallBackScreen>
   );
 };

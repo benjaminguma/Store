@@ -3,7 +3,10 @@ import useCtxHook from '../../shared/hooks/UseCtxHook';
 
 const CartTotal = () => {
   const {cart} = useCtxHook ();
-  const total = cart.reduce ((acc, item) => acc + item.originalPrice, 0);
+  const total = cart.reduce (
+    (acc, item) => acc + item.originalPrice * item.count,
+    0
+  );
   return (
     <div className="cart_total">
       <div className="cart_total_box">

@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import {useParams, Redirect} from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import Swipers from '../../shared/uielements/Swiper';
 import Counter from '../../shared/uielements/Counter';
@@ -9,8 +10,17 @@ import TopNav from '../../shared/uielements/TopNav';
 import {fade} from '../../utils/swiperconfig';
 import {motion} from 'framer-motion';
 import {fadeIn} from '../../utils/animations';
+import useCtxHook from '../../shared/hooks/UseCtxHook';
 
-const ProductDiscription = ({}) => {
+const ProductDiscription = () => {
+  const {cart, productCategories, category, addToCart} = useCtxHook ();
+  const {productName} = useParams ();
+  const item = productCategories[category].productDetails.find (
+    item => item.productName === productName
+  );
+  const discount = Math.floor (item.discountedPrice / item.originalPrice) * 100;
+
+  if (!item) return <Redirect to="/" />;
   return (
     <motion.div
       variants={fadeIn}
@@ -22,40 +32,50 @@ const ProductDiscription = ({}) => {
       <section className="product_des">
         <div className="container">
           <div className="product_des_images">
-            <Swipers config={fade} big={false} />
+            <Swipers config={fade} big={false} images={item.imageUrls} />
           </div>
           <div className="product_des_pack">
             <article className="product_des_details">
               <h2 className="heading_small mb-1 cap weit-3 col-bl-1">
-                Norbury Scandinanian Norwubury chair
+                {item.productName}
               </h2>
 
               <p className="col-g-svg">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt ea harum quas, debitis fugiat, nostrum explicabo natus ducimus molestiae vel quasi. Cum a, accusantium culpa, ipsum vel necessitatibus voluptas tempore aliquid quidem recusandae rerum dicta!
+                {item.productDetails}
               </p>
             </article>
             <article className="product_des_price">
               <div className="product_des_price_box">
-                <p className="heading_med weit-1 upp"> ugx 119,000</p>
-                <del className="col-g-light"> 148,800</del>
+                <p className="heading_med weit-1 upp">
+                  {' '}ugx {item.originalPrice}
+                </p>
+                <del className="col-g-light upp">
+                  ugx {item.discountedPrice}
+                </del>
 
               </div>
-
-              <span className="badge_red br">
-                -20%
-              </span>
+              {discount > 0 &&
+                <span className="badge_red br">
+                  -{discount}%
+                </span>}
             </article>
             <div>
-              <Counter />
+              {cart.some (item => item.productName === productName) &&
+                <Counter
+                  count={
+                    cart.find (item => item.productName === productName).count
+                  }
+                  productName={productName}
+                />}
 
             </div>
             <div className="product_des_controls split mt-5 ">
-              <Link
-                to="/order"
+              <button
+                onClick={() => addToCart (productName)}
                 className=" btn_large btn_bord weit-2 br heading_small cap"
               >
                 add to bag
-              </Link>
+              </button>
               <Link
                 to="/bag"
                 className=" btn_large btn_yellow weit-2 br heading_small cap"

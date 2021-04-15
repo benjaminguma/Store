@@ -12,7 +12,7 @@ const Sidebar = ({data}) => {
         {data.map ((details, index) => (
           <SidebarLink
             {...details}
-            active={details.title === category}
+            active={index === category}
             handleClick={() => setCategory (details.index)}
           />
         ))}

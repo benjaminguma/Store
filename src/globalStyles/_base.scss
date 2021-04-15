@@ -37,6 +37,6 @@ li {
 }
 button:disabled,
 .disabled {
-	background-color: $col-gray-dis;
-	color: $col-white;
+	background-color: $col-gray-dis !important;
+	color: $col-white !important;
 }

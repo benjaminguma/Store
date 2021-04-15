@@ -1,17 +1,23 @@
 import React, {Children, Fragment} from 'react';
 import {createPortal} from 'react-dom';
 
-function Modal({children}) {
-  const element = (
-    <Fragment>
-      <div className="backdrop fill" />
+function Modal({children, close, isOpen}) {
+  const element = isOpen
+    ? <Fragment>
+        <div className="backdrop fill" onClick={close} />
 
-      <div className="modal center-abs topup">
-        {children}
-      </div>
+        <div className="modal center-abs topup">
+          {Children.map (children, child =>
+            React.cloneElement (child, {
+              close,
+              ...child.props,
+            })
+          )}
 
-    </Fragment>
-  );
+        </div>
+
+      </Fragment>
+    : null;
 
   return createPortal (element, document.getElementById ('modal_container'));
 }

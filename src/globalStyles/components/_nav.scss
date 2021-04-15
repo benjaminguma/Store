@@ -7,10 +7,19 @@
 
 	&_link {
 		justify-content: center;
+		position: relative;
 		font-size: 1.5rem;
 		&:link,
 		&:visited {
 			padding: 0.8rem 1rem;
+		}
+		span.count {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 2rem;
+			height: 2rem;
+			transform: translate(-50%, -50%);
 		}
 		svg {
 			width: 2rem;

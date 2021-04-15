@@ -1,7 +1,8 @@
 import React from 'react';
+import useCtxHook from '../../shared/hooks/UseCtxHook';
 import Counter from '../../shared/uielements/Counter';
 
-const CartItem = ({productName, originalPrice, discountedPrice}) => {
+const CartItem = ({productName, originalPrice, discountedPrice, count}) => {
   return (
     <div className="cart_item">
       <div className="cart_item_title">
@@ -22,7 +23,7 @@ const CartItem = ({productName, originalPrice, discountedPrice}) => {
           </del>
         </div>
         <div className="cart_item_counter ">
-          <Counter />
+          <Counter count={count} productName={productName} />
 
         </div>
       </div>

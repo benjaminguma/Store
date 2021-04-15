@@ -18,10 +18,23 @@ export default function (state, action) {
       };
     }
 
-    case Actions.REMOVE_FROM_CART: {
+    case Actions.REMOVE_CART_ITEM: {
       return {
         ...state,
-        cart: state.cart.filter (({id}) => id !== action.payload.id),
+        cart: cart.filter (({productName}) => productName !== action.payload),
+      };
+    }
+    case Actions.UPDATE_CART_ITEM: {
+      return {
+        ...state,
+        cart: cart.map (item => {
+          if (item.productName === action.payload.productName)
+            return Object.assign (
+              {},
+              {...item, count: item.count + action.payload.count}
+            );
+          return item;
+        }),
       };
     }
     case Actions.SET_CATEGORY: {

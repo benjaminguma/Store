@@ -1,19 +1,17 @@
 export const jumpup = {
   initial: {
     scale: 4,
-    y: 70,
-    backgroundColor: '#fe0095',
+    y: 80,
   },
   final: {
-    scale: 1,
-    x: '50%',
+    scale: [4, 3, 2, 1],
     y: '-50%',
-    backgroundColor: '#2392f5',
+    x: '-50%',
 
     transition: {
-      duration: 0.4,
+      duration: 0.2,
       type: 'spring',
-      yoyo: 2,
+      damping: 10,
     },
   },
   exit: {

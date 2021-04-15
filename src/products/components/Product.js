@@ -40,11 +40,7 @@ const Product = ({
   return (
     <Link to={`/${categoryName}/${productName}`} className="product br block">
       <figure className="br">
-        <img
-          src="https://soko.fra1.digitaloceanspaces.com/TestImg/d4f3afb9-87f5-4f62-9b97-0ff11bd3aba5.jpg"
-          alt="product_image"
-          className="product_image"
-        />
+        <img src={imageUrls[0]} alt="product_image" className="product_image" />
       </figure>
       <div className="product_details">
         <h3 className="heading_tiny weit-2 cap col-bl-1 ">

@@ -26,10 +26,26 @@ const AppState = ({children}) => {
       payload: name,
     });
   };
-  const addToCart = product_name => {
+  const addToCart = productName => {
+    if (state.cart.some (item => item.productName === productName)) return;
     dispatch ({
       type: Actions.ADD_TO_CART,
-      payload: product_name,
+      payload: productName,
+    });
+  };
+  const updateCartItem = (productName, count, prevCount) => {
+    if (prevCount === 1 && count === -1) {
+      return dispatch ({
+        type: Actions.REMOVE_CART_ITEM,
+        payload: productName,
+      });
+    }
+    dispatch ({
+      type: Actions.UPDATE_CART_ITEM,
+      payload: {
+        productName,
+        count,
+      },
     });
   };
 
@@ -39,6 +55,7 @@ const AppState = ({children}) => {
         ...state,
         setCategory,
         addToCart,
+        updateCartItem,
       }}
     >
       {children}
