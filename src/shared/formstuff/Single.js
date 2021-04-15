@@ -9,6 +9,8 @@ const Single = ({name, id, value, changeHandler, size = 1}) => {
       name={name}
       id={id}
       size={size}
+      value={value}
+      onChange={e => changeHandler (e.target.value)}
     />
   );
 };

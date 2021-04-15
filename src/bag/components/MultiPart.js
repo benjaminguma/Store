@@ -1,5 +1,4 @@
-import React, {Children, useReducer} from 'react';
-import {Link} from 'react-router-dom';
+import React, {useReducer} from 'react';
 import HeadText from '../../shared/smallComponents/HeadText';
 import Verifybutton from '../../shared/smallComponents/Verifybutton';
 import RenderIfTrue from '../../shared/smallComponents/RenderIfTrue';
@@ -27,7 +26,7 @@ const detStatus = (i, j) => {
 
 const MultiPart = ({children, handleRedirect}) => {
   const [state, dispatch] = useReducer (reducer, initialState);
-  const {counter, fields: {phoneVerified, payOnDelivery}} = state;
+  const {counter, fields: {phoneVerified, payOnDelivery}, formIsValid} = state;
   const updateHandler = name => value => {
     dispatch ({
       type: UPDATE,
@@ -71,7 +70,7 @@ const MultiPart = ({children, handleRedirect}) => {
           <RenderIfTrue condition={2 === counter}>
 
             <AddressList>
-              <Address submitHandler={updateHandler ('adddress')} />
+              <Address submitHandler={updateHandler ('address')} />
               <Address empty />
             </AddressList>
           </RenderIfTrue>
@@ -84,9 +83,9 @@ const MultiPart = ({children, handleRedirect}) => {
           <Verifybutton status={detStatus (3, counter)} />
 
           <HeadText head="Payment" text="select Your payment method" />
-          <RenderIfTrue condition={3 === counter}>
 
-            <div>
+          <div>
+            <RenderIfTrue condition={3 === counter}>
 
               <label htmlFor="test" className="checkbox flexi">
                 <input
@@ -100,14 +99,16 @@ const MultiPart = ({children, handleRedirect}) => {
                 <span className="checkbox_display round mr-1" />
                 <span className="checkbox_text">this is some check text</span>
               </label>
+            </RenderIfTrue>
+            {formIsValid &&
               <button
                 onClick={handleRedirect}
                 className="btn_yellow btn_large heading_med br"
               >
                 place Order
-              </button>
-            </div>
-          </RenderIfTrue>
+              </button>}
+
+          </div>
 
         </li>
 

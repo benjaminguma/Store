@@ -1,7 +1,7 @@
 import React, {Children, Fragment} from 'react';
 import {createPortal} from 'react-dom';
 
-function Modal({children, close, isOpen}) {
+function Modal({children, close, isOpen, onSubmit}) {
   const element = isOpen
     ? <Fragment>
         <div className="backdrop fill" onClick={close} />
@@ -10,6 +10,7 @@ function Modal({children, close, isOpen}) {
           {Children.map (children, child =>
             React.cloneElement (child, {
               close,
+              onSubmit,
               ...child.props,
             })
           )}

@@ -1,17 +1,24 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Single from '../../shared/formstuff/Single';
 import svgSprite from '../../images/sprite.svg';
 import {fadeIn} from '../../utils/animations';
 import {AnimatePresence, motion} from 'framer-motion';
 
-const ConfirmPhoneForm = ({close}) => {
-  const [value, setvalue] = useState (new Array (4).fill (''));
+const ConfirmPhoneForm = ({close, onSubmit}) => {
+  const [value, setvalue] = useState ([1, 2, 3, 4]);
 
   const updateValue = (val, index) => {
     let newValue;
 
     newValue = value.map ((char, id) => (index === id ? val : char));
   };
+
+  useEffect (
+    () => {
+      onSubmit ();
+    },
+    [value]
+  );
 
   return (
     <AnimatePresence>
@@ -39,7 +46,12 @@ const ConfirmPhoneForm = ({close}) => {
           </p>
           <div className="confirm_form_pack">
             {value.map ((v, index) => (
-              <Single onChange={val => updateValue (val, v)} key={index} />
+              <Single
+                value={v}
+                changeHandler={val => updateValue (val, index)}
+                key={index}
+                id={`key${index}`}
+              />
             ))}
 
           </div>

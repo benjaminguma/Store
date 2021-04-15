@@ -1,20 +1,12 @@
 # Storefront
 
-a web app that shows the location of an **Ip address** or **domain name** on a map
-
-> objectives:
-
-- View the optimal layout for each page depending on their device's screen size
-- See hover states for all interactive elements on the page
-- See their own IP Address on the map on the initial page load
-- Search for any IP addresses or domains and see the key information and location
-
+a e-commerce app that shows the location of an **Ip address** or **domain name** on a map
 
 ## preview
 
-![application preview](./desktop-design.jpg)
+![application preview](./desktop-design.png)
 
-### visit [the application here](http://iptracker.vercel.app)
+### visit [the application here](https://store-delta-two.vercel.app/)
 
 ## installing and running the app
 
@@ -25,13 +17,9 @@ npm start
 
 ## Built with
 
-
-
 1. [React.js](https://reactjs.org)
 1. [Sass](https://sass-lang.com)
 
 ## Aurthors
 
-
-
-- Benjamin Guma - [visit website](https://benjaminguma.vercel.app)
+-   Benjamin Guma - [visit my website](https://benjaminguma.vercel.app)

@@ -11,9 +11,9 @@ const VerifyPhone = ({updateHandler}) => {
       <PhoneInput
         value={value}
         onChange={val => setValue (val)}
-        // onSubmit={() => {
-        //   openModal ();
-        // }}
+        onSubmit={val => {
+          updateHandler (val);
+        }}
       />
 
     </div>
