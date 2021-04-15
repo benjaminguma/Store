@@ -38,10 +38,10 @@ const ConfirmPhoneForm = ({close}) => {
             <span className="weit-1 col-g-svg">+2348141908042</span>
           </p>
           <div className="confirm_form_pack">
-            <Single />
-            <Single />
-            <Single />
-            <Single />
+            {value.map ((v, index) => (
+              <Single onChange={val => updateValue (val, v)} key={index} />
+            ))}
+
           </div>
 
           <button className="col-b heading_tiny cap weit-2">

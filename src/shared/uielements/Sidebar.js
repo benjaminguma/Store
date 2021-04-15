@@ -5,7 +5,6 @@ import useCtxHook from '../hooks/UseCtxHook';
 
 const Sidebar = ({data}) => {
   const {category, setCategory} = useCtxHook ();
-  console.log (category);
   return (
     <div className="sidebar">
       <ul className="sidebar_list mb-2">

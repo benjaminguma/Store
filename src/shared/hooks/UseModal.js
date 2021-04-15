@@ -1,4 +1,4 @@
-import React, {useState, useCallback} from 'react';
+import {useState, useCallback} from 'react';
 
 const UseModal = state => {
   const [isOpen, toggleModal] = useState (false);

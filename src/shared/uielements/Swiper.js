@@ -1,7 +1,6 @@
-import React, {useEffect, Fragment, Children, useRef, Component} from 'react';
+import React, {Fragment, Children, Component} from 'react';
 // swiper
 import Swiper from 'swiper/bundle';
-import test from '../../images/photos/test.jpg';
 
 class Swipers extends Component {
   componentDidMount () {

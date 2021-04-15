@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React from 'react';
 
 import AddresBox from '../smallComponents/Address';
 import Nav from './Nav';
