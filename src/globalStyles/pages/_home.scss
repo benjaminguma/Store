@@ -6,8 +6,21 @@ main.main {
 	.container {
 		display: grid;
 		grid-template-columns: 2.2fr 5fr 2.5fr;
+
+		@include respond(gsm) {
+			grid-template-columns: 1fr;
+		}
 		& > * {
 			padding-top: 3.5rem;
+			@include respond(gsm) {
+				padding-top: 2.5rem;
+			}
+		}
+		.sidebar,
+		.cart {
+			@include respond(gsm) {
+				display: none;
+			}
 		}
 		// this is for productlist and cart sections
 		& > *:not(:first-child) {
@@ -32,10 +45,8 @@ main.main {
 .product_category {
 	position: relative;
 
-
-	.sidebar{
-		
-		&_link{
+	.sidebar {
+		&_link {
 			display: block;
 		}
 	}

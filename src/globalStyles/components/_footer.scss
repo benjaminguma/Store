@@ -3,7 +3,7 @@
 		padding: 4rem 0;
 		& > .container {
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(20rem, max-content));
+			grid-template-columns: repeat(3, minmax(10rem, max-content));
 			justify-content: center;
 			column-gap: 3rem;
 		}
@@ -13,6 +13,10 @@
 
 		&_img {
 			height: 5rem;
+
+			@include respond(gsm) {
+				height: 3rem;
+			}
 		}
 	}
 }

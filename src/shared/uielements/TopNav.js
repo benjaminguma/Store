@@ -4,23 +4,26 @@ import svgSprite from '../../images/sprite.svg';
 
 const TopNav = ({to, text, right}) => {
   return (
-    <div className=" container top_nav sp-btw">
-      <div className="top_nav_left">
+    <section className="bord-b-1 top_nav">
 
-        <Link to={to} className="  flexi btn_svg heading_med col-bl-1 cap">
-          <svg className="small_svg mr-2">
-            <use xlinkHref={svgSprite + '#larr'} />
-          </svg>
-          <span>
-            {text}
-          </span>
-        </Link>
-      </div>
-      <div className="top_nav_right">
+      <div className=" container  sp-btw flexi ">
+        <div className="top_nav_left">
 
-        {right}
+          <Link to={to} className="  flexi btn_svg heading_med col-bl-1 cap">
+            <svg className="small_svg mr-2">
+              <use xlinkHref={svgSprite + '#larr'} />
+            </svg>
+            <span>
+              {text}
+            </span>
+          </Link>
+        </div>
+        <div className="top_nav_right">
+
+          {right}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

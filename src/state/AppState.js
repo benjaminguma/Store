@@ -7,6 +7,7 @@ import * as Actions from './actions';
 
 const initialState = {
   productCategories: Data.categories,
+  topProducts: Data.topSellerProducts,
   categories: Data.categories.map (({categoryName, productDetails}, id) => ({
     title: categoryName,
     count: productDetails.length,

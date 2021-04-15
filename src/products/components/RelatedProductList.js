@@ -4,8 +4,10 @@ import svgSprite from '../../images/sprite.svg';
 import Swipers from '../../shared/uielements/Swiper';
 import {multiple} from '../../utils/swiperconfig';
 import {Fragment} from 'react';
+import useCtxHook from '../../shared/hooks/UseCtxHook';
 
 const RelatedProductList = () => {
+  const {topProducts} = useCtxHook ();
   return (
     <section className="related_products">
       <div className="container">
@@ -40,18 +42,10 @@ const RelatedProductList = () => {
               </Fragment>
             }
           >
-            <RelatedProduct />
-            <RelatedProduct />
-            <RelatedProduct />
-            <RelatedProduct />
-            <RelatedProduct />
-            <RelatedProduct />
-            <RelatedProduct />
-            <RelatedProduct />
-            <RelatedProduct />
-            <RelatedProduct />
-            <RelatedProduct />
-            <RelatedProduct />
+            {topProducts.map ((item, id) => (
+              <RelatedProduct {...item} key={id} />
+            ))}
+
           </Swipers>
         </div>
       </div>

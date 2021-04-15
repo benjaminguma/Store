@@ -9,6 +9,10 @@
 }
 html {
 	font-size: 62.5%;
+
+	@include respond(gsm) {
+		font-size: 59%;
+	}
 }
 
 body {
