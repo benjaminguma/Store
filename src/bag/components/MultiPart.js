@@ -11,7 +11,7 @@ const INC_COUNTER = 'INC_COUNTER';
 const initialState = {
   fields: {
     phoneVerified: false,
-    adddress: null,
+    address: false,
     payOnDelivery: false,
   },
   formIsValid: false,
@@ -26,7 +26,9 @@ const detStatus = (i, j) => {
 
 const MultiPart = ({children, handleRedirect}) => {
   const [state, dispatch] = useReducer (reducer, initialState);
-  const {counter, fields: {phoneVerified, payOnDelivery}, formIsValid} = state;
+  const {counter, formIsValid} = state;
+  const {phoneVerified, payOnDelivery, address} = state.fields;
+
   const updateHandler = name => value => {
     dispatch ({
       type: UPDATE,
@@ -35,6 +37,11 @@ const MultiPart = ({children, handleRedirect}) => {
         value,
       },
     });
+
+    if (state.counter < 3)
+      dispatch ({
+        type: INC_COUNTER,
+      });
   };
 
   return (
@@ -64,13 +71,18 @@ const MultiPart = ({children, handleRedirect}) => {
           <HeadText
             head="Delivery"
             text={
-              'select your delivery address from the existing one or add a new one'
+              address
+                ? 'your address has been noted perfectly'
+                : 'select your delivery address from the existing one or add a new one'
             }
           />
           <RenderIfTrue condition={2 === counter}>
 
             <AddressList>
-              <Address submitHandler={updateHandler ('address')} />
+              <Address
+                submitHandler={updateHandler ('address')}
+                isActive={address}
+              />
               <Address empty />
             </AddressList>
           </RenderIfTrue>
@@ -97,13 +109,15 @@ const MultiPart = ({children, handleRedirect}) => {
                   id="test"
                 />
                 <span className="checkbox_display round mr-1" />
-                <span className="checkbox_text">this is some check text</span>
+                <span className="checkbox_text small weit-1">
+                  pay on delivery
+                </span>
               </label>
             </RenderIfTrue>
             {formIsValid &&
               <button
                 onClick={handleRedirect}
-                className="btn_yellow btn_large heading_med br"
+                className="btn_yellow btn_large heading_med br mt-3"
               >
                 place Order
               </button>}
@@ -127,19 +141,20 @@ function AddressList({children}) {
 }
 
 function reducer (state, action) {
+  console.log (action.payload);
   switch (action.type) {
     case UPDATE: {
       let isValid = true;
       for (let name in state.fields) {
         if (name !== action.payload.name)
-          isValid = isValid && state.values[name];
+          isValid = isValid && state.fields[name];
         else isValid = isValid && action.payload.value;
       }
       return {
         ...state,
         fields: {
           ...state.fields,
-          [action.payload.name]: action.payload,
+          [action.payload.name]: action.payload.value,
         },
         formIsValid: isValid,
       };

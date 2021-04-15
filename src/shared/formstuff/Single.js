@@ -1,8 +1,18 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 
-const Single = ({name, id, value, changeHandler, size = 1}) => {
+const Single = ({name, count, id, value, changeHandler, size = 1}) => {
+  const myref = useRef ();
+
+  useEffect (
+    () => {
+      if (myref.current && count === id) myref.current.focus ();
+    },
+    [count, id]
+  );
+
   return (
     <input
+      ref={myref}
       className="form_input_single heading_large weit-1 u-center br"
       placeholder="0"
       type="text"
@@ -10,6 +20,7 @@ const Single = ({name, id, value, changeHandler, size = 1}) => {
       id={id}
       size={size}
       value={value}
+      maxLength={1}
       onChange={e => changeHandler (e.target.value)}
     />
   );

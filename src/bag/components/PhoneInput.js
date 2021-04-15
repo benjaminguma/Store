@@ -32,7 +32,7 @@ const PhoneInput = ({value, onChange, onSubmit}) => {
         </div>
       </div>
 
-      <Modal isOpen={isOpen} close={closeModal}>
+      <Modal isOpen={isOpen} close={closeModal} onSubmit={onSubmit}>
         <ConfirmPhoneForm />
       </Modal>
 

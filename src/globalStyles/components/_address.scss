@@ -12,6 +12,17 @@
 			row-gap: 0.7rem;
 			padding: 2rem 1rem;
 		}
+		&.active {
+			border: 2px solid $col-blue;
+		}
+		&_img {
+			display: inline-block;
+			width: 2.5rem;
+			height: 2.5rem;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
 
 		&_link {
 			svg {

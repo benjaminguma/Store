@@ -1,16 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {CirclePicker} from 'react-color';
-import test from '../../images/photos/test.jpg';
+import UseModal from '../../shared/hooks/UseModal';
 
-const ProductOrderItem = () => {
+const ProductOrderItem = ({productName, originalPrice, imageUrls}) => {
+  const {closeModal, isOpen, openModal} = UseModal ();
+  const {color, setColor} = useState ('red');
   return (
     <article className="order_item">
       <figure className="br">
-        <img src={test} alt="order_item_image" />
+        <img src={imageUrls[0]} alt="order_item_image" />
       </figure>
       <div className="order_item_box">
         <h4 className="heading_tiny col-bl-2 weit-2 cap">
-          norbury scandilanian chair for the best players
+          {productName}
         </h4>
         <ul className="order_item_list flexi ">
           <li>
@@ -27,8 +29,21 @@ const ProductOrderItem = () => {
               color :
             </h6>
             <span className="col-bl cap color_picker_box flexi">
-              <span className="color_box round" />
-              {/* <CirclePicker /> */}
+              <span
+                onClick={() => {
+                  if (isOpen) closeModal ();
+                  else openModal ();
+                }}
+                style={{color}}
+                className="color_box round"
+              />
+              {isOpen &&
+                <CirclePicker
+                  onChangeComplete={col => {
+                    setColor (col.hex);
+                  }}
+                />}
+
             </span>
 
           </li>
@@ -40,7 +55,7 @@ const ProductOrderItem = () => {
           </div>
 
           <p className="upp col-g-1 heading_tiny weit-2">
-            ugx 12,700
+            {originalPrice}
           </p>
         </div>
       </div>

@@ -3,10 +3,15 @@ import {Fragment} from 'react';
 import {Link} from 'react-router-dom';
 import svgSprite from '../../images/sprite.svg';
 
-const Address = ({checked, empty}) => {
+const Address = ({checked, submitHandler, empty, isActive}) => {
   return (
     <div
-      className={` card address_tablet br bord-1 ${empty ? ' center-flex' : ' grid'}`}
+      onClick={() => {
+        if (!empty) {
+          submitHandler (true);
+        }
+      }}
+      className={` card address_tablet br bord-1 ${empty ? ' center-flex' : ' grid'} ${isActive ? 'active' : ''}`}
     >
       {empty
         ? <Link
@@ -32,6 +37,13 @@ const Address = ({checked, empty}) => {
             <small className="small col-bl-1 weit-2">
               +256 76 633 4574
             </small>
+            <span className="address_tablet_svg center-flex">
+
+              <svg className="small_svg">
+                <use xlinkHref={svgSprite + '#mark'} />
+              </svg>
+            </span>
+
           </Fragment>}
     </div>
   );

@@ -5,20 +5,26 @@ import {fadeIn} from '../../utils/animations';
 import {AnimatePresence, motion} from 'framer-motion';
 
 const ConfirmPhoneForm = ({close, onSubmit}) => {
-  const [value, setvalue] = useState ([1, 2, 3, 4]);
+  const [value, setvalue] = useState (new Array (4).fill (''));
+  const [count, setCount] = useState (0);
 
   const updateValue = (val, index) => {
     let newValue;
 
     newValue = value.map ((char, id) => (index === id ? val : char));
-  };
 
-  useEffect (
-    () => {
-      onSubmit ();
-    },
-    [value]
-  );
+    if (count && count === index && newValue[index] === '') {
+      setCount (count - 1);
+    } else {
+      // if (count < value.length)
+      setCount (count + 1);
+    }
+    setvalue ([...newValue]);
+    if (!newValue.some (e => e === '' || e === ' ')) {
+      onSubmit (true);
+      close ();
+    }
+  };
 
   return (
     <AnimatePresence>
@@ -50,7 +56,8 @@ const ConfirmPhoneForm = ({close, onSubmit}) => {
                 value={v}
                 changeHandler={val => updateValue (val, index)}
                 key={index}
-                id={`key${index}`}
+                count={count}
+                id={index}
               />
             ))}
 

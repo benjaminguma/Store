@@ -23,14 +23,15 @@ function App () {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/:category/:productName">
-            <ProductPage />
-          </Route>
+
           <Route exact path="/bag">
             <BagPage />
           </Route>
           <Route exact path="/orderinfo/:id">
             <OrderTable />
+          </Route>
+          <Route exact path="/:category/:productName">
+            <ProductPage />
           </Route>
           <Route exact path="/account/">
             <OrderaddAddressPage />

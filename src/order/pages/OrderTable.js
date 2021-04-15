@@ -1,11 +1,21 @@
+import {motion} from 'framer-motion';
 import React from 'react';
 import CartTotal from '../../bag/components/CartTotal';
+import useCtxHook from '../../shared/hooks/UseCtxHook';
+import {fadeIn} from '../../utils/animations';
 import ConfirmBox from '../components/ConfirmBox';
 import ProductOrderItem from '../components/ProductOrderItem';
 
 const OrderTable = () => {
+  const {cart} = useCtxHook ();
   return (
-    <section className="order_section">
+    <motion.section
+      variants={fadeIn}
+      initial="initial"
+      animate="final"
+      exit="initial"
+      className="order_section"
+    >
       <div className="order_table card bord-1">
         <main className="order_table_list ">
 
@@ -15,14 +25,15 @@ const OrderTable = () => {
 
         </main>
         <article className="order_table_products mt-5">
-          <ProductOrderItem />
-          <ProductOrderItem />
-          <ProductOrderItem />
+          {cart.map ((item, index) => (
+            <ProductOrderItem {...item} key={index} />
+          ))}
+
           <CartTotal />
         </article>
 
       </div>
-    </section>
+    </motion.section>
   );
 };
 

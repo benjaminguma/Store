@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import PhoneInput from './PhoneInput';
 
-const VerifyPhone = ({updateHandler}) => {
-  // const {isOpen, openModal, closeModal} = UseModal (false);
+const VerifyPhone = ({submitHandler}) => {
   const [value, setValue] = useState ('');
 
   return (
@@ -12,7 +11,7 @@ const VerifyPhone = ({updateHandler}) => {
         value={value}
         onChange={val => setValue (val)}
         onSubmit={val => {
-          updateHandler (val);
+          submitHandler (val);
         }}
       />
 
