@@ -6,6 +6,7 @@ const SidebarLink = ({
   count,
   title,
   handleClick,
+  onClick,
   active,
   ...restProps
 }) => {
@@ -23,7 +24,7 @@ const SidebarLink = ({
           </button>
         : <button
             className={`sidebar_link btn_plain cap flexi ${active ? ' active' : ''}`}
-            onClick={handleClick}
+            onClick={() => onClick (title)}
           >
             <svg className="small_svg mr-1">
               <use xlinkHref={SvgSprite + `#${restProps.icon}`} />

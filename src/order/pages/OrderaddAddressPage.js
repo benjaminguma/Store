@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useState} from 'react';
 import AddressList from '../../bag/components/AddressList';
 import UseModal from '../../shared/hooks/UseModal';
 import Modal from '../../shared/uielements/Modal';
@@ -20,6 +20,8 @@ const data = [
 
 const OrderaddAddressPage = () => {
   const {isOpen, closeModal, openModal} = UseModal ();
+  const [child, setChild] = useState ('Address');
+
   return (
     <Fragment>
       <TopNav
@@ -33,9 +35,15 @@ const OrderaddAddressPage = () => {
       />
       <section className="orders_and_addresses">
         <div className="container bord-1 br">
-          <Sidebar data={data} />
-          {/* <AddressList /> */}
-          <CustomerOrderList onClick={openModal} />
+          <Sidebar
+            data={data}
+            onClick={text => setChild (text)}
+            active={child}
+          />
+          {child === 'Address'
+            ? <AddressList onClick={openModal} />
+            : <CustomerOrderList />}
+
         </div>
       </section>
       <Modal isOpen={isOpen} close={closeModal}>
