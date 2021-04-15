@@ -1,6 +1,6 @@
 # Storefront
 
-a e-commerce app that shows the location of an **Ip address** or **domain name** on a map
+a e-commerce app
 
 ## preview
 
