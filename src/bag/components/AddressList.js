@@ -6,7 +6,7 @@ const AddressList = ({children, onClick}) => {
       {children}
       <div className="address_list">
         <Address />
-        <Address empty onClick={onClick} />
+        <Address empty submitHandler={onClick} />
 
       </div>
     </section>

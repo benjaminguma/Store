@@ -3,12 +3,14 @@ import {Link} from 'react-router-dom';
 import FallBackScreen from '../components/FallBackScreen';
 
 import Confirmation from '../components/Confirmation';
+import useCtxHook from '../../shared/hooks/UseCtxHook';
 
 // <OrderConfirmation />;
 const CartPage = () => {
+  const {cart}= useCtxHook();
   return (
     <FallBackScreen
-      isOpen
+      isOpen={!!cart.length}
       big={true}
       footer={
         <Link

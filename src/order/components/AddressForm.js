@@ -2,12 +2,12 @@ import React from 'react';
 import Field from '../../shared/formstuff/Field';
 import svgSprite from '../../images/sprite.svg';
 
-const AddressForm = () => {
+const AddressForm = ({close}) => {
   return (
     <div className="address_form bg-w br">
       <header className="sp-btw address_form_header mb-2 bord-b-1">
         <h2 className="heading_med">Edit Address</h2>
-        <button>
+        <button onClick={close}>
           <svg className="small_svg">
             <use xlinkHref={svgSprite + '#close'} />
           </svg>

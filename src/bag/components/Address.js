@@ -14,8 +14,8 @@ const Address = ({checked, submitHandler, empty, isActive}) => {
       className={` card address_tablet br bord-1 ${empty ? ' center-flex' : ' grid'} ${isActive ? 'active' : ''}`}
     >
       {empty
-        ? <Link
-            to="/orderInfo/address/add"
+        ? <button
+            onClick={submitHandler}
             className="btn_plain weit-2 col-b flexi address_tablet_link"
           >
             <svg className="tiny_svg">
@@ -24,7 +24,7 @@ const Address = ({checked, submitHandler, empty, isActive}) => {
             <span className="col-b heading_small">
               Add new address
             </span>
-          </Link>
+          </button>
         : <Fragment>
 
             <h4 className="heading_tiny col-bl-1 cap weit-3">
